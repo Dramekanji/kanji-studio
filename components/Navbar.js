@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { MdClose } from "react-icons/md";
 
-const Navbar = () => {
+const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -62,7 +62,7 @@ const Navbar = () => {
       {/* Overlay when menu is open */}
       {menuOpen && (
         <div
-          className="fixed top-0 left-0 w-full h-full bg-green-400 bg-opacity-50 z-30"
+          className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-30"
           onClick={() => setMenuOpen(false)}
         ></div>
       )}
@@ -70,4 +70,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;
