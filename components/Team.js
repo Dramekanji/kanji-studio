@@ -5,6 +5,7 @@ import kanji from "../public/images/kanji.JPG";
 import balthazard from "../public/images/balthazard.JPG";
 import isto from "../public/images/isto.JPG";
 import dfive from "../public/images/dfive.JPG";
+import djigui from "../public/images/djigui.JPG";
 
 const cards = [
   {
@@ -34,6 +35,13 @@ const cards = [
     title: "Director",
     bio: "D Five stands as a visionary in the world of music video production. With his cinematic approach, he’s not just making music videos; he’s creating visual epics that perfectly complement the music they represent. His style is more than just innovative; it’s pioneering, setting the stage for a new era in how music videos are conceived and perceived.",
     id: 4,
+  },
+  {
+    url: djigui,
+    name: "Djigui",
+    title: "Artist, Producer",
+    bio: "Djigui stands as a beacon in the music industry, a trailblazing producer whose Midas touch has turned numerous projects into chart-topping hits. With years of experience under his belt, Djigui is not just a producer; he is a visionary, shaping the soundscape of modern music with his unique blend of creativity and technical prowess.",
+    id: 5,
   },
 ];
 
@@ -65,11 +73,11 @@ const HorizontalScrollCarousel = () => {
 
       if (viewportWidth < 768) {
         // Small screens
-        cardWidth = 240;
+        cardWidth = 200;
         gap = 4;
       } else if (viewportWidth >= 768 && viewportWidth < 998) {
         // Medium screens
-        cardWidth = 300; // Adjust cardWidth for medium screens
+        cardWidth = 500; // Adjust cardWidth for medium screens
         gap = 4; // Adjust gap for medium screens
       } // Add more conditions for larger screens if needed
 
@@ -118,7 +126,7 @@ const Card = ({ card }) => {
         src={card.url}
         alt={card.name}
         fill
-        objectFit="cover"
+        style={{ objectFit: "cover" }}
         className="transition-transform duration-300 group-hover:scale-110"
       />
       {isExpanded && (

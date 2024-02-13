@@ -8,13 +8,13 @@ const About = () => {
           positive impact.
         </h1>
         <p className="text-base">
-          At Kanji Studio, we're passionate about turning your artistic visions
-          into stunning realities. Whether it's through soul-stirring
-          songwriting, visionary creative direction, innovative production, or
-          cinematic music videos, we're here to elevate your art. Our team of
-          experienced professionals works closely with you at every step,
-          ensuring your voice isn't just heard, it resonates. Dive into a world
-          where your creativity knows no bounds.
+          At Kanji Studio, we&apos;re passionate about turning your artistic
+          visions into stunning realities. Whether it&apos;s through
+          soul-stirring songwriting, visionary creative direction, innovative
+          production, or cinematic music videos, we&apos;re here to elevate your
+          art. Our team of experienced professionals works closely with you at
+          every step, ensuring your voice isn&apos;t just heard, it resonates.
+          Dive into a world where your creativity knows no bounds.
         </p>
       </div>
     </div>
