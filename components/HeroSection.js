@@ -32,7 +32,7 @@ const HeroSection = () => (
         variants={growIn}
       >
         <video
-          src="/images/independence.mp4" // Assuming you've converted it to .mp4
+          src="/images/independence.mp4"
           autoPlay
           loop
           muted
