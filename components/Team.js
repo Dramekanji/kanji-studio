@@ -90,7 +90,7 @@ const HorizontalScrollCarousel = () => {
   return (
     <section ref={targetRef} className="relative h-[300vh] bg-black">
       <div className="flex h-16 items-center justify-center">
-        <span className="font-semibold text-8xl uppercase text-white mt-32">
+        <span className="font-semibold text-5xl  md:text-6xl lg:text-8xl  uppercase text-white mt-32">
           Meet The Team
         </span>
       </div>
