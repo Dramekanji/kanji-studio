@@ -46,16 +46,7 @@ const cards = [
 ];
 
 const Team = () => {
-  return (
-    <div className="bg-black">
-      <div className="flex h-48 items-center justify-center">
-        <span className="font-semibold text-8xl uppercase text-white">
-          Meet The Team
-        </span>
-      </div>
-      <HorizontalScrollCarousel />
-    </div>
-  );
+  return <HorizontalScrollCarousel />;
 };
 
 const HorizontalScrollCarousel = () => {
@@ -98,6 +89,11 @@ const HorizontalScrollCarousel = () => {
 
   return (
     <section ref={targetRef} className="relative h-[300vh] bg-black">
+      <div className="flex h-16 items-center justify-center">
+        <span className="font-semibold text-8xl uppercase text-white mt-32">
+          Meet The Team
+        </span>
+      </div>
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {cards.map((card) => {

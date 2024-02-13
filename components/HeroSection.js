@@ -3,7 +3,7 @@ import { slideUp } from "../utils/motion";
 import { growIn } from "../utils/motion";
 
 const HeroSection = () => (
-  <div className="flex min-h-screen">
+  <div className="flex flex-col md:flex-row min-h-screen">
     <div className="flex flex-col justify-between p-8">
       <motion.div
         className="flex flex-col items-start justify-center h-full"
@@ -11,7 +11,7 @@ const HeroSection = () => (
         animate="visible"
         variants={slideUp}
       >
-        <h1 className="font-bold text-5xl sm:text-7xl leading-none">
+        <h1 className="font-bold text-5xl sm:text-7xl leading-none mt-20">
           Your artistic <br />
           vision <br />
           our creative <br />
