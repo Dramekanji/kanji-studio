@@ -31,29 +31,26 @@ const NavBar = () => {
 
       <div
         className={`fixed top-20 left-0 h-full bg-white text-black z-40 overflow-auto transform ${
-          menuOpen ? "translate-x-0" : "-translate-x-full"
-        } w-64 transition-transform duration-300 ease-in-out`}
+          menuOpen ? "translate-x-0 w-1/2" : "-translate-x-full w-1/2"
+        } transition-transform duration-300 ease-in-out`}
       >
-        <button
-          onClick={() => setMenuOpen(false)}
-          className="text-lg p-8 focus:outline-none"
-        >
-          <MdClose size={30} />
+        <button onClick={() => setMenuOpen(false)} className="p-4 pl-8">
+          <MdClose size={45} />
         </button>
         <div className="flex flex-col">
-          <Link className="p-4 hover:bg-gray-800" href="#home">
+          <Link className="p-4 pl-10 hover:bg-gray-800" href="#home">
             Home
           </Link>
-          <Link className="p-4 hover:bg-gray-800" href="#about">
+          <Link className="p-4 pl-10 hover:bg-gray-800" href="#about">
             About
           </Link>
-          <Link className="p-4 hover:bg-gray-800" href="#services">
+          <Link className="p-4 pl-10 hover:bg-gray-800" href="#services">
             Services
           </Link>
-          <Link className="p-4 hover:bg-gray-800" href="#works">
+          <Link className="p-4 pl-10 hover:bg-gray-800" href="#works">
             Works
           </Link>
-          <Link className="p-4 mt-auto hover:bg-gray-800" href="#contact">
+          <Link className="p-4 pl-10 mt-auto hover:bg-gray-800" href="#contact">
             Contact
           </Link>
         </div>
@@ -62,7 +59,7 @@ const NavBar = () => {
       {/* Overlay when menu is open */}
       {menuOpen && (
         <div
-          className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-30"
+          className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-30 duration-500 ease-in"
           onClick={() => setMenuOpen(false)}
         ></div>
       )}
