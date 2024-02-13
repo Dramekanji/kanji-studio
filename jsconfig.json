@@ -2,8 +2,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/components/*": ["components/*"]
-      // Add other aliases as needed
+      "@/components/*": ["components/*"],
+      "@/styles/*": ["styles/*"]
     }
   }
 }
